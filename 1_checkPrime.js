@@ -1,4 +1,4 @@
-// 1. check Prime
+// 1. Check Prime
 
 // Question: How would you verify a prime number?
 
