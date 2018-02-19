@@ -11,6 +11,7 @@ function mergeSortedArray(a, b) {
   var i = 1;
   var j = 1;
 
+  // if either array a or array b has no more elements to merge
   if (a.length == 0) {
     return b;
   }
@@ -19,8 +20,9 @@ function mergeSortedArray(a, b) {
     return a;
   }
 
+  // while array a and array b exists
   while(aElm || bElm) {
-    if ((aElm && !bElm) || aElm < bElm) {
+    if ((aElm && !bElm) || aElm < bElm) {   // if element in array a exist and is smaller that the element in array b
       merged.push(aElm);
       aElm = a[i++];
     }
